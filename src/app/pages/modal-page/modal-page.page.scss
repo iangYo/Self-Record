@@ -1,0 +1,37 @@
+ion-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    ion-avatar{
+        margin: 22px 10px 0px 0px;
+    }
+
+    span{
+        margin-left: 86px;
+    }
+}
+
+.form{
+
+    .button-form{
+        --color: #707070;
+    }
+}

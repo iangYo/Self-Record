@@ -1,0 +1,7 @@
+{
+  "name": "selfRecord",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

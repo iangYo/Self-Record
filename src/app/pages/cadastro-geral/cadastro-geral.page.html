@@ -1,0 +1,32 @@
+<ion-content>
+
+	<div class="container">
+
+		<div class="header">
+			<h1>Cadastro</h1>
+			<span class="subtitle"> Selecione o <b>tipo de conta</b></span>
+		</div>
+
+		<div class="buttons">
+
+			<ion-card  [routerLink]="['/cadastro-profissional']" routerDirection="forward">
+				<ion-card-content>
+					<img src="/assets/img/doctor.png" class="ion-card-image">
+					<span class="cardText">Profissional</span>
+				</ion-card-content>
+			</ion-card>
+
+			<ion-card [routerLink]="['/cadastro-usuario']" routerDirection="forward">
+				<ion-card-content>
+					<img src="/assets/img/pacient.png" class="ion-card-image">
+					<span class="cardText">Paciente</span>
+				</ion-card-content>
+			</ion-card>
+
+		</div>
+
+		<div class="loginLink">
+			<span class="text">Já possui cadastro? <b>Faça Login.</b></span>
+		</div>
+	</div>
+</ion-content>

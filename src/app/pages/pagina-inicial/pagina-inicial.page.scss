@@ -1,0 +1,84 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-content{
+    background: #F9F9F9;
+}
+
+h1{
+color: #A71D1D;
+font-size:16px;
+font-weight: bold;
+font-family: 'Poppins';
+}
+
+.text{
+    color: #707070;
+    text-align: center;
+    font-size:14px;
+    font-weight: normal;
+    font-family: 'Proxima Nova Soft';
+}
+
+.img-icon{
+    height: 24px;
+}
+
+// .button-tab-position-1{
+//     margin-right: 10px;
+// }
+
+// .button-tab-position-2{
+//     margin-right: 10px;
+// }
+
+// .button-tab-position-3{
+//     margin-left: 10px;
+// }
+
+// .button-tab-position-4{
+//     margin-left: 10px;
+// }
+
+ion-label{
+    color: #707070;
+    text-align: center;
+    font-size:12px;
+    font-weight: normal;
+    font-family: 'Proxima Nova Soft';
+}
+
+ion-fab{
+    margin-bottom:50px;
+}
+
+ion-fab-button{
+    --background: #A71D1D;
+}
+
+ion-card{
+    border-radius: 15px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ion-card-image{
+    width:100px;
+}
+
+.textBorder{
+    color: #707070;
+    text-align: center;
+    font-size:14px;
+    font-weight: normal;
+    font-family: 'Proxima Nova Soft';
+    border-style: solid;
+    border-width: 0 0 0 3px;
+    border-color: #1B90A8;
+}

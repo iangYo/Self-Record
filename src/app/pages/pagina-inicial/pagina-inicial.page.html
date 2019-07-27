@@ -1,0 +1,127 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-avatar>
+      <img src="/assets/img/pagina-inicial/avatar.png">
+    </ion-avatar>
+
+    <h1>Bem vinda, Polyana!</h1>
+
+    <span class="text">Seu último acesso foi em 12/07/2019</span>
+  </ion-toolbar>
+</ion-header> -->
+
+<div class="header">
+  <ion-header>
+    <ion-toolbar>
+      <ion-avatar>
+        <img src="/assets/img/pagina-inicial/avatar.png">
+      </ion-avatar>
+      <h1>Bem vinda, Polyana!</h1>
+    </ion-toolbar>
+</ion-header>
+</div>
+
+<ion-content>
+
+  <div class="cards">
+
+    <ion-card>
+      <ion-card-content>
+        <img src="/assets/img/pagina-inicial/medicine.png" class="ion-card-image">
+      </ion-card-content>
+
+      <ion-card-content>
+        <h1>Está quase na hora de tomar o seu remédio</h1>
+        <span class="text">Paracetamol, 750mg</span><br>
+        <span class="text"> 3 vezes ao dia</span>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <h1>Veja seu prontuário eletrônico</h1>
+        <span class="text">Última entrada:</span><br>
+        <span class="textBorder">12/07/2019</span>
+      </ion-card-content>
+
+      <ion-card-content>
+        <img src="/assets/img/pagina-inicial/medical-history.png" class="ion-card-image">
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <img src="/assets/img/pagina-inicial/medkit.png" class="ion-card-image">
+      </ion-card-content>
+
+      <ion-card-content>
+        <h1>Você não tem consultas próximas</h1>
+        <span class="text">Próxima consulta:</span><br>
+        <span class="textBorder">22/07/2019</span>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <h1>Está quase na hora de tomar o seu remédio</h1>
+        <span class="text">Paracetamol, 750mg</span><br>
+        <span class="text"> 3 vezes ao dia</span>
+      </ion-card-content>
+
+      <ion-card-content>
+        <img src="/assets/img/pagina-inicial/heart.png" class="ion-card-image">
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+
+  <!-- Fab vertical -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" horizontal="center" edge>
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>
+
+
+<!-- Tab -->
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="remédios"  class="button-tab-position-1">
+      <img src="assets/img/pagina-inicial/house.png" class="img-icon">
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Consultas" class="button-tab-position-2">
+      <img src="assets/img/pagina-inicial/settings.png" class="img-icon">
+      <ion-label>Configuração</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Home"  class="button-tab-position-3">
+      <img src="assets/img/pagina-inicial/profile.png" class="img-icon">
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Exames"  class="button-tab-position-4">
+      <img src="assets/img/pagina-inicial/hospital.png" class="img-icon">
+      <ion-label>Emergência</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
