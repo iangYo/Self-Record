@@ -1,9 +1,9 @@
 export class Profissional {
-    public nome: String
-    public email: String
-    public senha: String
-    public userid: String
-    public registro: Number
-    public especialidade: String
-    public profissao: String
+    public nome: string
+    public email: string
+    public senha: string
+    public userid: string
+    public registro: number
+    public especialidade: string
+    public profissao: string
 }
