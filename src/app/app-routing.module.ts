@@ -9,8 +9,9 @@ const routes: Routes = [
   { path: 'cadastro-profissional', loadChildren: './pages/cadastro-profissional/cadastro-profissional.module#CadastroProfissionalPageModule' },
   { path: 'cadastro-geral', loadChildren: './pages/cadastro-geral/cadastro-geral.module#CadastroGeralPageModule' },
   { path: 'pagina-inicial', loadChildren: './pages/pagina-inicial/pagina-inicial.module#PaginaInicialPageModule' },
-  { path: 'pagina-inicial-v2', loadChildren: './pages/pagina-inicial-v2/pagina-inicial-v2.module#PaginaInicialV2PageModule' },
-  { path: 'modal-page', loadChildren: './pages/modal-page/modal-page.module#ModalPagePageModule' },
+  { path: 'test-cadastro-usuario', loadChildren: './pages/test-cadastro-usuario/test-cadastro-usuario.module#TestCadastroUsuarioPageModule' },
+  { path: 'perfil-usuario', loadChildren: './pages/perfil-usuario/perfil-usuario.module#PerfilUsuarioPageModule' },
+  { path: 'remedio', loadChildren: './pages/remedio/remedio.module#RemedioPageModule' },
 ];
 
 @NgModule({

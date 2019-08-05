@@ -1,0 +1,97 @@
+.container ul {
+  margin: 0;
+  margin-top: 30px;
+  list-style: none;
+  position: relative;
+  color: #000;
+  font-size: 13px;
+}
+.container ul:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px solid #E2E2E2; // dashed
+}
+.container ul li { // div container texto
+  position: relative;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  width: 250px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.container ul li:not(:first-child) {
+  margin-top: 60px;
+}
+.container ul li > span { // linha
+  width: 2px;
+  height: 100%;
+  background: #E2E2E2;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.container ul li > span:before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #1B90A8;
+  position: absolute;
+  background: #1B90A8;
+  left: -5px;
+  top: 0;
+
+}
+.container ul li span:after {
+  top: 100%;
+}
+.container ul li > div {
+  margin-left: 10px;
+}
+.container div .title, .container div .type {
+  font-weight: 600;
+  font-size: 12px;
+}
+.container div .info {
+  font-weight: 300;
+}
+.container div > div {
+  margin-top: 5px;
+}
+.container span.number {
+  height: 100%;
+}
+.container span.number span { // span horario
+  position: absolute;
+  font-size: 10px;
+  left: -35px;
+  font-weight: bold;
+}
+.container span.number span:first-child {
+  top: 0;
+}
+
+ion-tabs{
+  .img-icon{
+    height: 24px;
+  }
+
+  ion-label{
+    color: #707070;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Proxima Nova Soft';
+  }
+}
+
+ion-fab{
+  margin-bottom:50px;
+
+  ion-fab-button{
+    --background: #A71D1D;
+  }
+}

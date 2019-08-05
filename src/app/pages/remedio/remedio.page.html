@@ -1,0 +1,89 @@
+<ion-content>
+  <div class="content">
+    <div class="textHeader">
+      <h1>Acompanhe</h1>
+    </div>
+
+    <div class="container">
+      <ul>
+
+        <li><span></span>
+          <div>
+            <div class="title">Azitromicina</div>
+            <div class="info">1 vez ao dia </div>
+          </div> <span class="number"><span>08:00</span> </span>
+        </li>
+        <li>
+          <div><span></span>
+            <div class="title">Diclofenaco Potássico</div>
+            <div class="info">2 vezes ao dia </div>
+          </div> <span class="number"><span>12:00</span> </span>
+        </li>
+        <li>
+          <div><span></span>
+            <div class="title">Micropil R21</div>
+            <div class="info">1 vez ao dia </div>
+          </div> <span class="number"><span>19:00</span> </span>
+        </li>
+        <li>
+          <div><span></span>
+            <div class="title">Diclofenaco Potássico</div>
+            <div class="info">2 vezes ao dia </div>
+          </div> <span class="number"><span>00:00</span> </span>
+        </li>
+      </ul>
+
+    </div>
+
+    <h2>Gerencie seus remédios</h2>
+  </div>
+
+</ion-content>
+
+<!-- Fab vertical -->
+<ion-fab vertical="bottom" horizontal="end" slot="fixed" horizontal="center" edge>
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+
+  <ion-fab-list side="top">
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+
+<!-- Tab -->
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="remédios"  class="button-tab-position-1" [routerLink]="['/pagina-inicial']" routerDirection="back">
+      <img src="assets/img/pagina-inicial/house.png" class="img-icon">
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Consultas" class="button-tab-position-2">
+      <img src="assets/img/pagina-inicial/settings.png" class="img-icon">
+      <ion-label>Configuração</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Home"  class="button-tab-position-3">
+      <img src="assets/img/pagina-inicial/profile.png" class="img-icon">
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Exames"  class="button-tab-position-4">
+      <img src="assets/img/pagina-inicial/hospital.png" class="img-icon">
+      <ion-label>Emergência</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

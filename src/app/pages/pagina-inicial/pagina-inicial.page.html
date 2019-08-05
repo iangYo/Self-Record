@@ -1,39 +1,29 @@
-<!-- <ion-header>
-  <ion-toolbar>
+<div class="header">
+
     <ion-avatar>
       <img src="/assets/img/pagina-inicial/avatar.png">
     </ion-avatar>
 
+  <div class="textAvatar">
     <h1>Bem vinda, Polyana!</h1>
+    <span>Seu último acesso foi em 12/07/2019</span>
+  </div>
 
-    <span class="text">Seu último acesso foi em 12/07/2019</span>
-  </ion-toolbar>
-</ion-header> -->
-
-<div class="header">
-  <ion-header>
-    <ion-toolbar>
-      <ion-avatar>
-        <img src="/assets/img/pagina-inicial/avatar.png">
-      </ion-avatar>
-      <h1>Bem vinda, Polyana!</h1>
-    </ion-toolbar>
-</ion-header>
 </div>
 
 <ion-content>
 
   <div class="cards">
 
-    <ion-card>
-      <ion-card-content>
+    <ion-card  >
+      <ion-card-content href="/remedio.html" routerDirection="forward">
         <img src="/assets/img/pagina-inicial/medicine.png" class="ion-card-image">
       </ion-card-content>
 
       <ion-card-content>
         <h1>Está quase na hora de tomar o seu remédio</h1>
         <span class="text">Paracetamol, 750mg</span><br>
-        <span class="text"> 3 vezes ao dia</span>
+        <span class="textBorder"> 3 vezes ao dia</span>
       </ion-card-content>
     </ion-card>
 
@@ -65,7 +55,7 @@
       <ion-card-content>
         <h1>Está quase na hora de tomar o seu remédio</h1>
         <span class="text">Paracetamol, 750mg</span><br>
-        <span class="text"> 3 vezes ao dia</span>
+        <span class="textBorder"> 3 vezes ao dia</span>
       </ion-card-content>
 
       <ion-card-content>
@@ -74,32 +64,29 @@
     </ion-card>
 
   </div>
-
-
-  <!-- Fab vertical -->
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed" horizontal="center" edge>
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-
-    <ion-fab-list side="top">
-      <ion-fab-button>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="logo-twitter"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
-
 </ion-content>
 
+<!-- Fab vertical -->
+<ion-fab vertical="bottom" horizontal="end" slot="fixed" horizontal="center" edge>
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+
+  <ion-fab-list side="top">
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
 
 <!-- Tab -->
 <ion-tabs>
@@ -114,7 +101,7 @@
       <ion-label>Configuração</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="Home"  class="button-tab-position-3">
+    <ion-tab-button tab="Home"  class="button-tab-position-3" [routerLink]="['/perfil-usuario']">
       <img src="assets/img/pagina-inicial/profile.png" class="img-icon">
       <ion-label>Perfil</ion-label>
     </ion-tab-button>
