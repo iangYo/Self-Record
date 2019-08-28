@@ -1,0 +1,104 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 3px 4px #F1F1F1;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 136px;
+
+  ion-avatar{
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #fff;
+    box-shadow: 0 6px 10px #F1F1F1;
+  }
+
+  .textAvatar {
+    margin-left: 20px;
+
+    h1{
+      font-size: 20px;
+      color: #A71D1D;
+      font-weight: bold;
+      font-family: 'Poppins';
+    }
+
+    span {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.previous-page{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-start;
+  margin-bottom: 16px;
+  margin-top: 150px;
+  padding: 14px;
+}
+
+.icon-previous-page{
+  font-size: 32px;
+}
+
+
+h2{
+  font-size: 20px;
+  color: #A71D1D;
+  font-weight: bold;
+  font-family: 'Poppins';
+  margin-left:16px;
+  margin-top: 150px;
+}
+
+h3{
+  font-size: 16px;
+  color: #707070;
+  font-weight: bold;
+  font-family: 'Proxima Nova Soft';
+  margin-left:16px;
+}
+
+ion-input {
+  --placeholder-color: #707070;
+  --placeholder-font-weight: normal;
+  font-size: 14px;
+  width: 230px;
+}
+
+.item.sc-ion-label-ios-h, .item .sc-ion-label-ios-h{
+  color: #707070;
+  font-size:16px;
+  font-weight: normal;
+  font-family: 'Proxima Nova Soft';
+
+}
+
+.button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+  ion-button{
+    width:250px;
+    height:70px;
+    padding:10px;
+    --background: linear-gradient(180deg, #9A0000 33.33%,#E35454 100%);
+    --color:#fff;
+    --border-radius: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    --background-activated: #1B90A8;
+  }
+}

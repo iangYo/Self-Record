@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/pagina-inicial']" routerDirection="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="header">
+
+    <ion-avatar>
+      <img src="/assets/img/pagina-inicial/avatar.png">
+    </ion-avatar>
+
+    <div class="textAvatar">
+      <h1>Bem vinda, Polyana!</h1>
+      <span >Seu último acesso foi em 12/07/2019</span>
+    </div>
+
+  </div>
+</ion-header>
+<ion-content>
+
+  <div class="previous-page" [routerLink]="['/pagina-inicial']" routerDirection="back">
+    <ion-icon name="arrow-back" class="icon-previous-page"></ion-icon>
+    <span class="textBack">Voltar</span>
+  </div>
+
+<h2> Adicionar novo medicamento</h2>
+  <h3> Identifique o medicamento</h3>
+
+  <ion-item>
+    <ion-label>Nome:</ion-label>
+    <ion-input type="text" name="txtnomeremedio" placeholder="Exemplo: Diclofenaco de sódio"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Composição</ion-label>
+    <ion-input type="text"  name="txtcomposicao" placeholder="Exemplo: 500mg"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Formato</ion-label>
+    <ion-select placeholder="Selecione o formato do medicamento">
+      <ion-select-option value="comprimido">Comprimido</ion-select-option>
+      <ion-select-option value="capsula">Cápsula</ion-select-option>
+      <ion-select-option value="injetavel">Injetável</ion-select-option>
+      <ion-select-option value="oral">Xarope ou suspensão oral</ion-select-option>
+      <ion-select-option value="topico">Pomada ou creme</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <h3>Qual a posologia?</h3>
+  <ion-item>
+    <ion-label>Quanto eu devo tomar?</ion-label>
+    <ion-input type="text" name="txtquantidade" placeholder="Exemplo: 1 comprimido"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Quantas vezes ao dia?</ion-label>
+    <ion-input type="text" name="txtvezesaodia" placeholder="Exemplo: 2 vezes ao dia"></ion-input>
+  </ion-item>
+
+  <div class="button">
+    <ion-button type="submit" block>Adicionar</ion-button>
+  </div>
+
+
+</ion-content>
+
+
+

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/pagina-inicial']" routerDirection="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="header">
+
+    <ion-avatar>
+      <img src="/assets/img/pagina-inicial/avatar.png">
+    </ion-avatar>
+
+    <div class="textAvatar">
+      <h1>Bem vinda, Polyana!</h1>
+      <span >Seu último acesso foi em 12/07/2019</span>
+    </div>
+
+  </div>
+</ion-header>
+<ion-content>
+
+
+  <h2> Adicionar nova consulta</h2>
+  <h3> Identifique a consulta</h3>
+
+  <ion-item>
+    <ion-label>Clínica</ion-label>
+    <ion-input type="text" name="txtemail" placeholder="UNIMED"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Especialidade</ion-label>
+    <ion-input type="text"  name="txtemail" placeholder="Cardiologista"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Médico</ion-label>
+    <ion-input type="text"  name="txtemail" placeholder="Doutor João da Silva"></ion-input>
+  </ion-item>
+
+
+  <h3>Detalhes do agendamento</h3>
+
+  <ion-item>
+    <ion-label>Data da consulta</ion-label>
+    <ion-datetime displayFormat="MM DD YY" placeholder="Selecione a data"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Horário da consulta</ion-label>
+    <ion-datetime displayFormat="HH:mm" placeholder="Selecione o horário"></ion-datetime>
+  </ion-item>
+
+  <div class="button">
+    <ion-button type="submit" block>Adicionar</ion-button>
+  </div>
+
+
+</ion-content>

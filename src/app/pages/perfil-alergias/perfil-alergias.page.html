@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/perfil-usuario']" routerDirection="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="header">
+
+    <ion-avatar>
+      <img src="/assets/img/pagina-inicial/avatar.png">
+    </ion-avatar>
+
+    <div class="textAvatar">
+      <h1>Bem vinda, Polyana!</h1>
+      <span >Seu último acesso foi em 12/07/2019</span>
+    </div>
+
+  </div>
+</ion-header>
+
+<ion-content>
+  <h2>Alergias</h2>
+  <span> Preencha suas informações</span>
+
+  <ion-item>
+    <ion-label position="floating">Adicione suas alergias</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+
+
+  <div class="button">
+    <ion-button type="submit" block>Salvar</ion-button>
+  </div>
+</ion-content>

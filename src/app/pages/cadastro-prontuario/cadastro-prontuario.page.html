@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/pagina-inicial']" routerDirection="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="header">
+
+    <ion-avatar>
+      <img src="/assets/img/pagina-inicial/avatar.png">
+    </ion-avatar>
+
+    <div class="textAvatar">
+      <h1>Bem vinda, Polyana!</h1>
+      <span >Seu último acesso foi em 12/07/2019</span>
+    </div>
+
+  </div>
+</ion-header>
+<ion-content>
+
+  <div class="previous-page" [routerLink]="['/pagina-inicial']" routerDirection="back">
+    <ion-icon name="arrow-back" class="icon-previous-page"></ion-icon>
+    <span class="textBack">Voltar</span>
+  </div>
+
+  <h2> Adicionar nova entrada</h2>
+  <h3> Preencha seu diário de saúde</h3>
+
+  <ion-item>
+    <ion-label>Alimentação</ion-label>
+    <ion-select placeholder="Escolha">
+      <ion-select-option value="m">Não saudável</ion-select-option>
+      <ion-select-option value="f">Regular</ion-select-option>
+      <ion-select-option value="m">Saudável</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Adicione detalhes</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sono</ion-label>
+    <ion-select placeholder="Escolha">
+      <ion-select-option value="m">Problemas ao dormir</ion-select-option>
+      <ion-select-option value="f">Regular</ion-select-option>
+      <ion-select-option value="m">Saudável</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Adicione detalhes</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Atividade física</ion-label>
+    <ion-select placeholder="Escolha">
+      <ion-select-option value="m">Nenhuma</ion-select-option>
+      <ion-select-option value="f">Leve</ion-select-option>
+      <ion-select-option value="f">Moderada</ion-select-option>
+      <ion-select-option value="m">Intensa</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">Adicione detalhes</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sintomas</ion-label>
+    <ion-input type="text" name="txtemail" placeholder="Dor de cabeça, cansaço"></ion-input>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">Adicione detalhes</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <div class="button">
+    <ion-button type="submit" block>Adicionar</ion-button>
+  </div>
+
+
+</ion-content>

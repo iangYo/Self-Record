@@ -51,17 +51,6 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-card>
-      <ion-card-content>
-        <h1>Está quase na hora de tomar o seu remédio</h1>
-        <span class="text">Paracetamol, 750mg</span><br>
-        <span class="textBorder"> 3 vezes ao dia</span>
-      </ion-card-content>
-
-      <ion-card-content>
-        <img src="/assets/img/pagina-inicial/heart.png" class="ion-card-image">
-      </ion-card-content>
-    </ion-card>
 
   </div>
 </ion-content>
@@ -73,17 +62,17 @@
   </ion-fab-button>
 
   <ion-fab-list side="top">
+    <ion-label>Medicamentos</ion-label>
     <ion-fab-button>
-      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="add" [routerLink]="['/cadastro-remedio']" routerDirection="forward">Medicamento</ion-icon>
     </ion-fab-button>
+    <ion-label>Consultas</ion-label>
     <ion-fab-button>
-      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="add" [routerLink]="['/cadastro-consulta']" routerDirection="forward"></ion-icon>
     </ion-fab-button>
+    <ion-label>Prontuario</ion-label>
     <ion-fab-button>
-      <ion-icon name="logo-twitter"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-button>
-      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="add" [routerLink]="['/cadastro-prontuario']" routerDirection="forward"></ion-icon>
     </ion-fab-button>
   </ion-fab-list>
 </ion-fab>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/perfil-usuario']" routerDirection="back"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="header">
+
+    <ion-avatar>
+      <img src="/assets/img/pagina-inicial/avatar.png">
+    </ion-avatar>
+
+    <div class="textAvatar">
+      <h1>Bem vinda, Polyana!</h1>
+      <span >Seu último acesso foi em 12/07/2019</span>
+    </div>
+
+  </div>
+</ion-header>
+
+<ion-content>
+  <h2>Dados pessoais</h2>
+  <span> Preencha suas informações</span>
+
+  <ion-item>
+    <ion-label>Nome:</ion-label>
+    <ion-input type="text" name="txtemail" placeholder="Nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Idade:</ion-label>
+    <ion-input type="text" name="txtemail" placeholder="Idade"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Altura:</ion-label>
+    <ion-input type="text" name="txtemail" placeholder="Altura(cm)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Peso:</ion-label>
+    <ion-input type="text" name="txtemail" placeholder="Peso(Kg)"></ion-input>
+  </ion-item>
+
+  <div class="button">
+    <ion-button type="submit" block>Salvar</ion-button>
+  </div>
+</ion-content>
